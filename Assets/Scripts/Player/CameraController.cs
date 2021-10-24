@@ -2,7 +2,7 @@
 
 namespace FirstGame
 {
-    public sealed class CameraController : MonoBehaviour
+    public sealed class CameraController2 : MonoBehaviour
     {
         public Player Player;
         private Vector3 _offset;

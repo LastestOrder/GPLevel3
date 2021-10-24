@@ -13,7 +13,7 @@ namespace FirstGame
         private void Start()
         {
             ((IAction)this).Action();
-            ((IInitialization)this).Action();
+            ((IInitializationn)this).Action();
         }
 
         void IAction.Action()
@@ -24,14 +24,14 @@ namespace FirstGame
             }
         }
 
-        void IInitialization.Action()
-        {
-            _color = Random.ColorHSV();
-            if (TryGetComponent(out Renderer renderer))
-            {
-                renderer.material.color = _color;
-            }
-        }
+        // void IInitializationn.Action()
+        // {
+        //     _color = Random.ColorHSV();
+        //     if (TryGetComponent(out Renderer renderer))
+        //     {
+        //         renderer.material.color = _color;
+        //     }
+        // }
 
         private void OnTriggerEnter(Collider other)
         {
@@ -49,6 +49,9 @@ namespace FirstGame
         public int CompareTo(InteractiveObject other) => name.CompareTo(other.name);
 
 
-
+        public void Initialization()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

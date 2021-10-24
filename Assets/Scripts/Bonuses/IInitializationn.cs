@@ -1,6 +1,6 @@
 ﻿namespace FirstGame
 {
-    public interface IInitialization
+    public interface IInitializationn
     {
         void Action();
     }
