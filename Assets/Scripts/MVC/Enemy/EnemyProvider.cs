@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace FirstGame
 {
-    public class EnemyProvider : MonoBehaviour, IEnemy
+    public sealed class EnemyProvider : MonoBehaviour, IEnemy
     {
         public event Action<int> OnTriggerEnterChange;
         [SerializeField] private float _speed;

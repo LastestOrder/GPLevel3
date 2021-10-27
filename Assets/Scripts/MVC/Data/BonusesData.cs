@@ -9,7 +9,6 @@ namespace FirstGame
     public sealed class BonusesData : ScriptableObject
     {
         [Serializable]
-        
         private struct BonusesInfo
         {
             public BonusesType Type;

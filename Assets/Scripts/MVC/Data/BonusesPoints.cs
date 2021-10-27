@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace FirstGame
 {
+    [CreateAssetMenu(fileName = "BonusesSettings", menuName = "Data/Bonuses/BobusesPoints")]
     public sealed class BonusesPoints : ScriptableObject
     {
         [SerializeField] private GameObject _bonusesPoints;
@@ -19,7 +20,7 @@ namespace FirstGame
             return _vectorListBonusesPoints;
         }
 
-        public List<Vector3> _bonusesSpawnPoints
+        public List<Vector3> BonusesSpawnPoints
         {
             get
             {

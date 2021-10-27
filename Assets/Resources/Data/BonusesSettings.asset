@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bonusesInfos:
   - Type: 1
-    BonusesPrefab: {fileID: 4500448009605699244, guid: 114619f6f4983ae479536ad75b620777, type: 3}
+    BonusesPrefab: {fileID: 1398991894335726823, guid: 114619f6f4983ae479536ad75b620777, type: 3}
   - Type: 2
-    BonusesPrefab: {fileID: 4500448009605699244, guid: 114619f6f4983ae479536ad75b620777, type: 3}
+    BonusesPrefab: {fileID: 1398991894335726823, guid: 114619f6f4983ae479536ad75b620777, type: 3}
