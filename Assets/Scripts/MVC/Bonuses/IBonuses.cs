@@ -2,8 +2,8 @@
 
 namespace FirstGame
 {
-    public interface IBonuses
+    public interface IBonuses : ISpawn
     {
-        event Action<int> OnTriggerEnterChange;
+        event Action<int,int> OnTriggerEnterChange;
     }
 }

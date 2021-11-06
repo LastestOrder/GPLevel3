@@ -8,7 +8,7 @@ namespace FirstGame
     {
         [SerializeField] private GameObject _bonusesPoints;
 
-        private List<Vector3> ExtractBonusesPoints()
+        public List<Vector3> ExtractBonusesPoints()
         {
             var _vectorListBonusesPoints = new List<Vector3>();
 

@@ -9,10 +9,12 @@ namespace FirstGame
         [SerializeField] private string _playerDataPath;
         [SerializeField] private string _enemyDataPath;
         [SerializeField] private string _bonusesDataPath;
+        [SerializeField] private string _bonusesPointDataPath;
 
         private PlayerData _player;
         private EnemyData _enemy;
         private BonusesData _bonuses;
+        private BonusesPoints _bonusesPoints;
 
         public PlayerData Player
         {
@@ -43,11 +45,24 @@ namespace FirstGame
         {
             get
             {
-                if (_bonuses)
+                if (_bonuses==null)
                 {
                     _bonuses = Load<BonusesData>("Data/" + _bonusesDataPath);
                 }
                 return _bonuses;
+            }
+        }
+
+        public BonusesPoints BonusesPoints
+        {
+            get
+            {
+                if (_bonusesPoints == null)
+                {
+                    _bonusesPoints = Load<BonusesPoints>("Data/" + _bonusesPointDataPath);
+                }
+
+                return _bonusesPoints;
             }
         }
 

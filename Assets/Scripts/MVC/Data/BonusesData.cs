@@ -8,6 +8,8 @@ namespace FirstGame
     [CreateAssetMenu(fileName = "BonusesSettings", menuName = "Data/Bonuses/BobusesSettings")]
     public sealed class BonusesData : ScriptableObject
     {
+        // public Material _materialGood;
+        // public Material _materialBad;
         [Serializable]
         private struct BonusesInfo
         {

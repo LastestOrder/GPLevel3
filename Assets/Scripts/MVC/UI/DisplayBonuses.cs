@@ -7,6 +7,7 @@ namespace FirstGame
     {
         private Text _text;
         private int _point;
+
         public DisplayBonuses()
         {
             _text = Object.FindObjectOfType<Text>();
