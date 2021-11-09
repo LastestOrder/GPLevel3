@@ -23,6 +23,11 @@ namespace FirstGame
         public float Mass => _mass;
         public Material Material => _material;
 
+        public Vector3 LoadPosition(Vector3 position)
+        {
+            return _spawnLocation.transform.position = position;
+        }
+
         public Vector3 ExtractPosition()
         {
             var Posiotion = _spawnLocation.transform.position;

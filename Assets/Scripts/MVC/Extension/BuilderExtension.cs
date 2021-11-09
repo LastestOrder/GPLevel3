@@ -1,4 +1,5 @@
-﻿using UnityEditor.SceneManagement;
+﻿using System;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 
 namespace FirstGame
@@ -57,6 +58,21 @@ namespace FirstGame
             var component = gameObject.GetOrAddComponent<MeshRenderer>();
             component.sharedMaterial = material;
             return gameObject;
+        }
+
+        public static bool TryBool(this string self)
+        {
+            return Boolean.TryParse(self, out var res) && res;
+        }
+
+        public static float TrySingle(this string self)
+        {
+            if (Single.TryParse(self, out var res))
+            {
+                return res;
+            }
+
+            return 0;
         }
 
     public static T GetOrAddComponent<T>(this GameObject gameObject) where T : Component
